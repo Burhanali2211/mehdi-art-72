@@ -1,0 +1,577 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif,cursive;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+h4 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 25%;
+    font-size: 45px;
+    transition: 0.6s;
+}
+
+body {
+    background: #000000;
+    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: 2s ease-in-out;
+
+}
+
+
+.container {
+    padding: 10px 10%;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff0000;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: rgb(206, 31, 31);
+    transition: background 0.5s;
+
+}
+
+.btn:hover {
+    background: #ff004f;
+}
+
+.contact-right form {
+    width: 100%;
+
+}
+
+form input,
+textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+
+.logo {
+    width: 175px;
+    border-color: #00ff00;
+    transition: 0.8ms;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li button {
+    text-decoration: none;
+    color: #fff;
+    background-color: none;
+    background: none;
+    border: none;
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li button::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #ff0000;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li button::hover:after {
+    width: 100%;
+
+}
+
+.btnLogin-popup {
+    width: 133px;
+    height: 50px;
+    background: none;
+    border-color: #ff0000;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #ffffff;
+    font-weight: 500;
+    margin-left: 10px;
+    transition: .4s;
+}
+
+.btnLogin-popup:hover {
+    background: #f31432;
+    color: #ffffff;
+    border-color: #27292b;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-timeline: 2s;
+}
+
+.log {
+    display: flex;
+    margin: auto;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.text {
+    width: 100%;
+    font-size: 25px;
+}
+
+
+.header-text {
+    margin-top: 8%;
+    font-size: 25px;
+}
+
+.header-text b {
+    color: #00ff00;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: #f70021;
+}
+
+h2 {
+    margin-left: 36%;
+    font-size: 38px;
+    transition: 0.6s;
+    margin-top: -1px;
+    margin-bottom: 53px;
+}
+
+h2:hover {
+    transform: translateY(-2px);
+    border-color: #02ff02;
+    border-radius: 5px;
+}
+
+/* -----------about------------ */
+
+#about {
+    padding: 88px 0;
+    color: #ffffff;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 290px;
+    border-radius: 20px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+    font-size: 20px;
+    word-spacing: 3px;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.header.active .form-header.hope {
+    transform: translateY(-450px);
+}
+
+b {
+    color: red;
+}
+
+nav .fas {
+    display: none;
+}
+
+/* <--------------contact----------> */
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+    color: white;
+}
+
+
+/* .contact-right input:invalid{
+    animation: shake 300ms;
+    color: rgb(248, 246, 246);
+}
+@keyframes shake{
+    25%{
+        transform: translateX(4px);
+    }
+    50%{
+        transform: translateX(-4px);
+    }
+    75%{
+        transform: translateX(4px);
+    }
+} */
+.contact-left p {
+    margin-top: 30px;
+}
+
+.btn.btn2 {
+    display: inline-block;
+    background: #080808;
+}
+
+.btn.btn2:hover {
+    background: #f50066;
+    color: #ffffff;
+    box-shadow: 0 0 12px;
+}
+
+.copyright {
+    width: 100%;
+    color: #fffdfd;
+    text-align: center;
+    padding: 2px;
+    background: none;
+    font-weight: 300px;
+    margin-top: 20px;
+
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+
+.notes l {
+    /* display: inline;
+    padding: 136px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s; */
+    display: flex;
+    padding: 70px 10% 0;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.muntazir {
+    width: 250px;
+    height: 258px;
+    border-radius: 50%;
+    margin-top: 4%;
+    border: 5px solid rgb(0, 255, 64);
+    cursor: pointer;
+}
+
+.muntazir:hover {
+    border: 4px solid rgb(0, 255, 13);
+}
+
+.about p {
+    margin: 3% 20%;
+}
+
+.about img {
+    margin-left: 40%;
+}
+
+h4 {
+    margin-left: 40%;
+    margin-bottom: 25px;
+}
+
+/* -----------------copy----------- */
+.gallery {
+    padding: 15px;
+}
+
+.image-grid  {
+    display: grid;
+    /* border: 1px solid green; */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.ct {
+    width: 100%;
+    height: auto;
+
+    border-radius: 4px;
+}
+
+
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0, 0.5), #009688);
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+    .header-text {
+        margin-top: 35%;
+        font-size: 35px;
+    }
+
+    .header-text h1 {
+        font-size: 35px;
+    }
+
+
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    .logo {
+        width: 145px;
+        transition: 0.8ms;
+    }
+
+    nav ul {
+        background: rgb(78, 33, 39);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 1s;
+
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+        color: wheat;
+    }
+
+    .sub-title {
+        font-size: 45px;
+
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .about-col-1 {
+        margin-bottom: 30px;
+
+    }
+
+    .about-col-2 {
+        font-size: 20px;
+    }
+
+    .contact-right form {
+        width: 100%;
+
+    }
+
+    form input,
+    textarea {
+        width: 70%;
+        border: 0;
+        outline: none;
+        background: #262626;
+        padding: 15px;
+        margin: 14px 0;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 9px;
+
+    }
+
+    .contact-right textarea {
+        width: 346px;
+        height: 150px;
+    }
+
+    .ul pre {
+        width: 100%;
+        margin-left: -50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2 {
+        width: 100%;
+        margin-left: 7px;
+    }
+    h4{
+        margin-left:25% ;
+
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+
+    .about {
+
+        padding-top: 40px;
+    }
+
+    .muntazir {
+        width: 180px;
+        height: 188px;
+        border-radius: 50%;
+        margin-top: 10%;
+        border: 4px solid rgba(7, 255, 243, 0.158);
+        cursor: pointer;
+    }
+
+    .muntazir:hover {
+        border: 4px solid rgb(0, 255, 13);
+    }
+
+    .about p {
+        margin: 30px 90px;
+    }
+
+    .about img {
+        margin-left: 25%;
+    }
+
+    h3 {
+        /* margin:5px 5px 10px 27%; */
+        font-size: 24px;
+    }
+
+
+    .artist {
+        width: 200px;
+        height: 190px;
+        position: relative;
+    }
+
+    .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0, 0.5), #009688);
+    }
+
+}
+
+
+#msg {
+    color: #02ff02;
+    margin-top: -10px;
+    display: block;
+}
