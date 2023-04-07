@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif,cursive;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, cursive;
     box-sizing: border-box;
     text-decoration: none;
 }
@@ -332,10 +332,12 @@ nav .fas {
     color: #ababab;
     display: inline-block;
     transition: 0.5s;
+    background-color: var(--glow-color);
 }
 
 .social-icons a:hover {
     transform: translateY(-5px);
+    border-radius: 7%;
 }
 
 .notes l {
@@ -352,18 +354,36 @@ nav .fas {
     justify-content: space-between;
 }
 
-.muntazir {
-    width: 250px;
-    height: 258px;
-    border-radius: 50%;
-    margin-top: 4%;
-    border: 5px solid rgb(0, 255, 64);
-    cursor: pointer;
+
+
+h4 {
+    margin-top: 1%;
+    margin-left: 18%;
+    color: #ebe4e9;
 }
 
-.muntazir:hover {
-    border: 4px solid rgb(0, 255, 13);
+.copyright {
+    font-size: 14px;
 }
+
+.muntazir {
+    width: 270px;
+    height: auto;
+    border-radius: 5%;
+    border: 2px solid rgba(116, 92, 131, 0.808);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.about img {
+    margin-left: 18%;
+    margin-top: 2%;
+}
+.muntazir:hover {
+    transform: translateY(-5px);
+    border: none;
+}
+
 
 .about p {
     margin: 3% 20%;
@@ -383,7 +403,7 @@ h4 {
     padding: 15px;
 }
 
-.image-grid  {
+.image-grid {
     display: grid;
     /* border: 1px solid green; */
     grid-template-columns: repeat(2, 1fr);
@@ -393,8 +413,15 @@ h4 {
 .ct {
     width: 100%;
     height: auto;
+    border-radius: 390x;
+    border: 1px solid#1f1e1e;
+    margin: 0px 0% 8%;
+    padding: 5px 1%;
+    transition: 0.5s ease-in-out;
 
-    border-radius: 4px;
+}
+.ct:hover{
+    transform: translateY(-5px);
 }
 
 
@@ -512,40 +539,38 @@ h4 {
         width: 100%;
         margin-left: 7px;
     }
-    h4{
-        margin-left:25% ;
-
+/* about me kay text ki positioning */
+    h4 {
+        margin-left: 18%;
+        color: #ebe4e9;
     }
 
     .copyright {
         font-size: 14px;
     }
 
-    .about {
-
-        padding-top: 40px;
-    }
-
     .muntazir {
-        width: 180px;
-        height: 188px;
-        border-radius: 50%;
-        margin-top: 10%;
-        border: 4px solid rgba(7, 255, 243, 0.158);
+        /* width: 270px; */
+        height: auto;
+        border-radius: 5%;
+        border: 2px solid rgba(116, 92, 131, 0.808);
         cursor: pointer;
+        transition: 0.5s;
     }
-
+    
+    .about img {
+        margin-left: 18%;
+        margin-top: 10%;
+    }
     .muntazir:hover {
-        border: 4px solid rgb(0, 255, 13);
+        transform: translateY(-5px);
+        border: none;
     }
 
     .about p {
-        margin: 30px 90px;
+        margin: 30px 3% 19% 4%;
     }
 
-    .about img {
-        margin-left: 25%;
-    }
 
     h3 {
         /* margin:5px 5px 10px 27%; */
