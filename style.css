@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, cursive;
+    font-family: 'Manrope',sans-serif;
+
     box-sizing: border-box;
     text-decoration: none;
 }
@@ -14,9 +15,17 @@ h4 {
 }
 
 body {
-    background: #000000;
+    color: #080808;
     color: rgb(255, 255, 255);
     color: rgb(255, 255, 255);
+    /* background: #000000; */
+    background: black;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 #header {
@@ -25,7 +34,9 @@ body {
     background-size: cover;
     background-position: center;
     transition: 2s ease-in-out;
-
+    background: url(wallpaperflare.com_wallpaper\ \(7\).jpg);
+    background-size: cover;
+    height: 100vh;
 }
 
 
@@ -195,7 +206,7 @@ html {
 .header-text b {
     color: #00ff00;
     font-size: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Arial Narrow', Arial, sans-serif;
 }
 
 .header-text h1 {
@@ -379,6 +390,7 @@ h4 {
     margin-left: 18%;
     margin-top: 2%;
 }
+
 .muntazir:hover {
     transform: translateY(-5px);
     border: none;
@@ -411,16 +423,18 @@ h4 {
 }
 
 .ct {
-    width: 100%;
+    width: 50%;
     height: auto;
-    border-radius: 390x;
-    border: 1px solid#1f1e1e;
-    margin: 0px 0% 8%;
-    padding: 5px 1%;
+
+    border-radius: 9px;
+    border: 2px solid#05f505;
+    margin: 0px 30% 8%;
+    padding: 0px 0%;
     transition: 0.5s ease-in-out;
 
 }
-.ct:hover{
+
+.ct:hover {
     transform: translateY(-5px);
 }
 
@@ -439,9 +453,38 @@ h4 {
 @media only screen and (max-width: 600px) {
 
 
+
     .header-text {
+        font-family: 'Bebas Neue',Arial, Helvetica, sans-serif;
         margin-top: 35%;
         font-size: 35px;
+    }
+
+    /* my latest work section smjhay */
+    .gallery {
+        padding: 18px;
+        margin-left: 8%;
+    }
+
+    .image-grid {
+        display: grid;
+        /* border: 1px solid green; */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .ct {
+        width: 100%;
+        height: auto;
+
+        border-radius: 9px;
+        border: 2px solid#626962;
+        margin: 0px 0% 8%;
+        padding: 0px 0%;
+        transition: 0.5s ease-in-out;
+
+        /* yaha pay yey khatam hota hai */
+
     }
 
     .header-text h1 {
@@ -455,12 +498,14 @@ h4 {
     }
 
     .logo {
-        width: 145px;
+        margin-top: 2%;
+        margin-left: -35px;
+        width: 150px;
         transition: 0.8ms;
     }
 
     nav ul {
-        background: rgb(78, 33, 39);
+        background: rgb(25, 138, 243);
         position: fixed;
         top: 0;
         right: -200px;
@@ -539,8 +584,10 @@ h4 {
         width: 100%;
         margin-left: 7px;
     }
-/* about me kay text ki positioning */
+
+    /* about me kay text ki positioning */
     h4 {
+        font-family: 'Bebas Neue',Arial, Helvetica, sans-serif;
         margin-left: 18%;
         color: #ebe4e9;
     }
@@ -553,15 +600,16 @@ h4 {
         /* width: 270px; */
         height: auto;
         border-radius: 5%;
-        border: 2px solid rgba(116, 92, 131, 0.808);
+        border: 2px solid rgba(67, 51, 77, 0.808);
         cursor: pointer;
         transition: 0.5s;
     }
-    
+
     .about img {
         margin-left: 18%;
         margin-top: 10%;
     }
+
     .muntazir:hover {
         transform: translateY(-5px);
         border: none;
