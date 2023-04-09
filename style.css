@@ -1,14 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Manrope',sans-serif;
+    font-family: 'Arial', sans-serif;
 
     box-sizing: border-box;
     text-decoration: none;
 }
 
 h4 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Arial', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-left: 25%;
     font-size: 45px;
     transition: 0.6s;
@@ -16,7 +16,6 @@ h4 {
 
 body {
     color: #080808;
-    color: rgb(255, 255, 255);
     color: rgb(255, 255, 255);
     /* background: #000000; */
     background: black;
@@ -34,7 +33,7 @@ body {
     background-size: cover;
     background-position: center;
     transition: 2s ease-in-out;
-    background: url(wallpaperflare.com_wallpaper\ \(7\).jpg);
+    background: url(mountains.jpg);
     background-size: cover;
     height: 100vh;
 }
@@ -415,54 +414,217 @@ h4 {
     padding: 15px;
 }
 
-.image-grid {
-    display: grid;
-    /* border: 1px solid green; */
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+/* other source */
+
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -10px;
 }
 
-.ct {
-    width: 50%;
-    height: auto;
-
-    border-radius: 9px;
-    border: 2px solid#05f505;
-    margin: 0px 30% 8%;
-    padding: 0px 0%;
-    transition: 0.5s ease-in-out;
-
+.photo {
+    position: relative;
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    overflow: hidden;
+    float: left;
+    margin-top: 0;
+    border-radius: 5%;
+    box-shadow: 0 0 0 transparent;
+    /* add transparent shadow */
+    transition: box-shadow 0.5s ease;
+    /* add transition to shadow */
 }
 
-.ct:hover {
+.photo:hover {
     transform: translateY(-5px);
 }
 
 
-
-.overlay {
+.photo img {
     width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0, 0.5), #009688);
+    height: auto;
+    display: block;
+    transition: filter 0.3s ease;
+    margin-top: 2px;
 }
+
+.photo:hover img {
+    filter: saturate(1.3);
+}
+
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.photo:hover .hover-text {
+    opacity: 1;
+}
+
+.photo:nth-child(even) .hover-text {
+    transform: translate(-50%, -150%);
+}
+
+.photo:nth-child(odd) .hover-text {
+    transform: translate(-50%, 50%);
+}
+
+.photo:hover .underline {
+    opacity: 1;
+    transform: translate(-50%, -50%) scaleX(1);
+}
+
+.underline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleX(0);
+    opacity: 0;
+    width: 80%;
+    height: 2px;
+    background-color: #dad5d5;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .photo-grid {
+        flex-direction: column;
+    }
+
+    .photo-left,
+    .photo-right {
+        width: 100%;
+    }
+
+    .photo-right+.photo-right {
+        margin-top: 10px;
+    }
+
+
+
+
+
+
+
+
+
+    .ct {
+        width: 50%;
+        height: auto;
+
+        border-radius: 9px;
+        border: 2px solid#05f505;
+        margin: 0px 30% 8%;
+        padding: 0px 0%;
+        transition: 0.5s ease-in-out;
+
+    }
+
+    .image-grid {
+        display: grid;
+        /* border: 1px solid green; */
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .seven {
+        width: fit-content;
+    }
+
+    .nine {
+        width: fit-content;
+
+    }
+
+    .three {
+        width: fit-content;
+    }
+
+    .four {
+        width: fit-content;
+    }
+
+    .five {
+        width: fit-content;
+    }
+
+    .six {
+        width: fit-content;
+    }
+
+    .eight {
+        width: fit-content;
+    }
+
+    .one {
+        width: fit-content;
+    }
+
+    .ct:hover {
+        transform: translateY(-5px);
+    }
+
+
+
+    .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0, 0.5), #009688);
+    }
+
+    .article {
+        margin: 3% 20%;
+        padding: 88px 0;
+        color: #ffffff;
+    }
+
+    h6 {
+        font-size: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10%;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+
 
 
 
 @media only screen and (max-width: 600px) {
 
-
+    .article {
+        margin: 3%;
+        padding: 88px 0;
+        color: #ffffff;
+    }
 
     .header-text {
-        font-family: 'Bebas Neue',Arial, Helvetica, sans-serif;
+        font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
         margin-top: 35%;
         font-size: 35px;
     }
 
     /* my latest work section smjhay */
     .gallery {
-        padding: 18px;
+        padding: 25px;
         margin-left: 8%;
     }
 
@@ -516,6 +678,19 @@ h4 {
         transition: right 1s;
 
     }
+
+    .photo {
+        margin: 10px;
+        overflow: hidden;
+        float: left;
+        border-radius: 10%;
+        margin-top: 10%;
+        box-shadow: 0 0 0 transparent;
+        /* add transparent shadow */
+        transition: box-shadow 0.3s ease;
+        /* add transition to shadow */
+    }
+
 
     nav ul li {
         display: block;
@@ -587,7 +762,7 @@ h4 {
 
     /* about me kay text ki positioning */
     h4 {
-        font-family: 'Bebas Neue',Arial, Helvetica, sans-serif;
+        font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
         margin-left: 18%;
         color: #ebe4e9;
     }
@@ -645,6 +820,6 @@ h4 {
 
 #msg {
     color: #02ff02;
-    margin-top: -10px;
+    margin-top: -15px;
     display: block;
 }
